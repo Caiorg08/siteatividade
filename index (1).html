@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--inicio da estrutura HTML-->
+<html lang="pt-BR">
+<head>
+<!--cabeçalho da pagina-->
+<title> coisas aleatorias</title>
+<meta charset="UTF-8">
+<style>
+
+    hr{
+        color: #f80000;
+    }
+
+
+
+    input{
+        color: black;
+        border-radius: 5px;
+    }
+
+
+
+    th, td {
+      border-style:solid;
+      border-color: #f80000;
+    }
+    body {
+  background-image:url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/08/53138040273_4ee0c48b1b_o.jpg?w=880');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position-y: center;
+}
+a{color: aliceblue;}
+    
+    
+ </style>
+</head>
+<body style="background-color:rgb(255, 255, 255);">
+<!--corpo da pagina-->
+    <h1 style="background-color:rgb(248, 2, 2);text-align: center;"> BEM VINDO!!</h1>
+    <ul style="text-align: center; list-style-type: none;">
+        <li><a href="#tabela">Tabela</a> | </li>
+    </ul>    
+<img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/10/Deyverson-Atletico-River-Libertadores-e1729645469442.jpg?w=420&h=240&crop=1&quality=85" alt="foto do galo" width="300" height="300">
+<p style="color:rgb(255, 0, 0);color: aliceblue;">estou no senai com fome </p>
+<h2 style="border:2px solid rgb(255, 0, 0);color: aliceblue;"> caio rodrigues gomes</h2>
+<p style="color: aliceblue;">hj foi um dia normal, não fiz nada de muito diferente</p>
+
+<h3 id="titulo1" style="color: rgb(255, 255, 255);">Tabela</h3>
+<section id="tabela"></section>
+<table style="width:50%;color: rgb(255, 255, 255)">
+<tr>
+    <th>caio</th>
+    <th>familia</th>
+    <th>carros</th>
+    <th>lugares FV</th>
+</tr>
+<tr>
+    <td>alto</td>
+    <td>mãe</td>
+    <td>GTR34</td>
+    <td>praia</td> 
+</tr>   
+<tr>
+    <td>estiloso</td>
+    <td>irmã</td>
+    <td>lancer</td>
+    <td>italia</td>
+</tr>
+<tr>
+    <td>extrovertido</td>
+    <td>irmão</td>   
+    <td>Porche 911</td>
+    <td>Hollywood</td>
+</tr>
+<tr>
+    <td>engraçado</td>
+    <td>padrasto/pai</td>
+    <td>BMW M4</td>
+    <td>Las Vegas</td>
+</tr>
+</table>  
+<br>
+
+
+<ul>
+    <!--link para ir para o site do galo-->
+    <li><a href="https://atletico.com.br/" target="_blank">Galooooo</a></li>
+    <!--para ir para o chatgpt-->
+    <li><a href="https://openai.com/">melhor site de pesquisa e respostas rapidas</a></li>
+    <!--para baixar arquivo-->
+    <li><a href="downloads/Atividade01EAD-SGBD.docx">Atividade</a></li>
+    <!--entrar em contato-->
+    <li><a href="https://wa.me/5531994464979?text=oii">contato</a></li>
+    <!--para entrar em contato via email-->
+    <li><a href="mailto:0001107439@senaimgaluno.com.br?subject=qualquer+coisa&body=oii,+me+chame+por+email">email</a></li>
+</ul>
+<!--seção galo-->
+<section id="Galo">
+ <h4 style="color: aliceblue;">Sobre o galo</h4>  
+ <form>
+    <label style="color: aliceblue;" for="nome">Nome do seu jogador preferido:</label>
+    <input style="color: aliceblue;" type="text" id="nome" name="nome" placeholder="nome do jogador" required>
+    <br><br>
+
+    <label style="color: aliceblue;" for="melhor jogador">Melhor jogador do galo (na sua opinião):</label>
+    <input style="color:black;" type="melhor jogador" id="melhor jogador" name="melhor jogador" placeholder="nome do jogador" required>
+    <br><br>
+
+      <!-- Botão de envio -->
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+</section>
+<br>
+<br>
+<hr style="color: #f80000;">
+
+<form action="processar.php" method="post">
+    <label style="color: rgb(255, 255, 255);" for="text"> nome:</label>
+    <input  type="text" name="texto " placeholder="seu nome" required>
+    <br>
+    <label style="color: aliceblue;" for="email"> email:</label>
+    <input type="email" id="email" placeholder="digite seu email" required>
+    <br>
+    <label style="color: rgb(255, 255, 255);" for="date"> Data:</label>
+    <input type="date" required>
+    <br>
+    <label style="color: aliceblue;" for="senha">Senha:</label>
+    <input type="password" placeholder="Digite sua senha" required>
+    <br>
+    <label style="color: aliceblue;" for="tel">Telefone</label>
+    <input type="tel" placeholder="digite seu telefone" required>
+    <br>
+    <h3 style="color: aliceblue;"> informe seu país</h3>
+ <select>
+    <option value="brazil">brazil</option>
+    <option value="portugal">portugal</option>
+    <option value="EUA">EUA</option>
+    <option value="Inglaterra">Inglaterra</option>
+
+
+ </select>
+ <h3 style="color: aliceblue;"> informe seu gênero</h3>
+    <br>
+    <input type="radio" name="genero">
+    <label style="color: aliceblue;" for=" masculino">Masculino</label><br>
+    <input type="radio" name="genero">
+    <label style="color: aliceblue;" for="femininno">Feminino</label><br>
+    <input type="radio" name="genero">
+    <label style="color: aliceblue;" for="Outro">Outro</label>
+    <br><br>
+
+<label style="color: aliceblue;" for="termos e condicoes">Aceitar termos e condições</label>
+<input type="checkbox">
+
+ 
+ <br>
+ <br>
+ <h4 style="color: aliceblue;"> Mensagens Adicionais</h4>
+ <textarea></textarea>
+
+
+<br>
+ <input type="submit">
+ <br>
+ <input type="reset">
+
+</form>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+<!--fim do HTML-->
